@@ -13,8 +13,8 @@
         background-color: orange;
       }
 
-      .chat-box:click{
-        height: 400px;
+      .chat-length{
+        height: 400px !important;
       }
 
       .summa{
@@ -23,11 +23,22 @@
         z-index: -1;
       }
     </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+    <script>
+      $(document).ready(function(){
+        $( ".chat-box" ).on( "click", function() {
+          $(".chat-box").toggleClass("chat-length");
+        });
+      });
+
+    </script>
   </head>
   <body>
     <div class="summa"></div>
     <div class="chat-box">
-
+        <br><br>
+        hi
+        i'm chat bot
     </div>
   </body>
 </html>
