@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
     <style>
       .chat-box{
         position: fixed;
@@ -11,6 +12,13 @@
         right: 10px;
         overflow-x: hidden;
         background-color: orange;
+      }
+
+      .chat-box .task-bar{
+          width: 100%;
+          height: 30px;
+          background-color: green;
+
       }
 
       .chat-length{
@@ -24,9 +32,10 @@
       }
     </style>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
     <script>
       $(document).ready(function(){
-        $( ".chat-box" ).on( "click", function() {
+        $( ".task-bar" ).on( "click", function() {
           $(".chat-box").toggleClass("chat-length");
         });
       });
@@ -36,9 +45,8 @@
   <body>
     <div class="summa"></div>
     <div class="chat-box">
-        <br><br>
-        hi
-        i'm chat bot
+        <div class="task-bar">Chat bot</div>
+        hi i'm chat bot
     </div>
   </body>
 </html>
